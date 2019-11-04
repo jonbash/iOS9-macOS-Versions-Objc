@@ -47,8 +47,13 @@
 	
 	LSIVersion *version = [self.controller.versions objectAtIndex:indexPath.row]; // ]
 	
+	// Dot syntax - new for properties
 	cell.textLabel.text = version.name;
 	cell.detailTextLabel.text = version.releaseDate;
+	
+	// Method call syntax (Original Objc syntax)
+	[[cell textLabel] setText:[version name]];
+	[[cell detailTextLabel] setText:[version releaseDate]];
 	
     return cell;
 }
