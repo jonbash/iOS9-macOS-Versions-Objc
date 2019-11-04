@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface LSIVersionController : NSObject
 
-@end
+@property NSArray *versions;
 
-NS_ASSUME_NONNULL_END
+//- (instancetype)init; // declared in NSObject
+
+@end
