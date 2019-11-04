@@ -6,6 +6,9 @@
 //  Copyright © 2019 Lambda, Inc. All rights reserved.
 //
 
+// Implementation file = .m
+// C (.c), Objective-C (.m, .mm), Objective-C++, C++ (.cpp)
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
