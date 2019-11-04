@@ -32,7 +32,7 @@
 					 [[LSIVersion alloc] initWithName:@"Sierra" releaseDate:@"September 20, 2016"],
 					 [[LSIVersion alloc] initWithName:@"High Sierra" releaseDate:@"September 25, 2017"],
 					 [[LSIVersion alloc] initWithName:@"Mojave" releaseDate:@"September 24, 2018"],
-					 [[LSIVersion alloc] initWithName:@"Catalina" releaseDate:@"October, 2019?"],
+					 [[LSIVersion alloc] initWithName:@"Catalina" releaseDate:@"October 7, 2019"],
 					 nil];
 	}
 	return self;
