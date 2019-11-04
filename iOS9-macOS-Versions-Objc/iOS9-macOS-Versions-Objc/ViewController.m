@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSIVersion.h"
 
 @interface ViewController ()
 
@@ -41,9 +42,14 @@
 	NSLog(@"pi: %0.2f distance: %f count: %i", pi, distance, count);
 	
 	
+	//LSIVersion *version = // Use of undeclared identifier 'LSIVersion'
 
-
-
+	// 1. Get the space (Buying the land)
+	// 2. Initialize the object (Build the house)
+	LSIVersion *version = [[LSIVersion alloc] initWithName:@"Catalina"
+											   releaseDate:@"October 7th, 2019"];
+	NSLog(@"Version: %@ releaseDate: %@", version.name, version.releaseDate);
+	
 
 
 }
