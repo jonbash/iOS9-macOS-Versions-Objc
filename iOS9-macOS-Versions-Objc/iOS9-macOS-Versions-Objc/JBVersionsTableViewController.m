@@ -47,15 +47,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VersionCell"
-                                                            forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VersionCell" forIndexPath:indexPath];
     
     // Configure the cell...
     // method call (function) in obj-c
     JBVersion *version = [self.controller.versions objectAtIndex:indexPath.row];
 
+    // dot syntax - new(er) for properties
     cell.textLabel.text = version.name;
     cell.detailTextLabel.text = version.releaseDate;
+
+    // method call syntax (original objc syntax)
+    [[cell textLabel] setText:[version name]];
+    [[cell detailTextLabel] setText:[version releaseDate]];
     
     return cell;
 }
