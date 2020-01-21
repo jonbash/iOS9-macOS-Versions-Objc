@@ -41,6 +41,8 @@
     JBVersion *version = [[JBVersion alloc] initWithName:@"Catalina"
                                              releaseDate:@"October 7, 2019"];
     NSLog(@"version: %@ releaseDate: %@", version.name, version.releaseDate);
+
+    [version printDate];
 }
 
 
